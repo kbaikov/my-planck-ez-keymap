@@ -136,3 +136,10 @@ uint8_t layer_state_set_user(uint8_t state) {
 
 
 
+// Custom QMK here
+const key_override_t delete_key_override = 
+    ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL);
+
+const key_override_t *key_overrides[] = {
+	&delete_key_override
+};
